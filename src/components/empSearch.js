@@ -1,9 +1,9 @@
 import React from "react";
 import { Input } from "reactstrap"
 
-import { SearchBar } from "../styles"
+import { SearchBar } from "../components/styles"
 
-const EmployeeSearch = props => {
+const EmpSearch = props => {
     return (
 
         <SearchBar>
@@ -19,4 +19,4 @@ const EmployeeSearch = props => {
     )
 };
 
-export default EmployeeSearch;
+export default EmpSearch;

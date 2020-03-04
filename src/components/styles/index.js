@@ -1,19 +1,19 @@
 import styled from "styled-components";
 
-const darkGray = "#596066";
-const lightGray = "#dbdbdb";
-const darkRed = "#ba0000";
-const white = "#f5f5f5";
+const purple = "#996666";
+const lightGray = "#ffebe6";
+const darkPurple = "#280f19";
+const white = "#ffccbe";
 
 export const HeaderBar = styled.article`
-border-bottom: 3px solid ${darkRed};
-background-color: ${darkGray};
+border-bottom: 3px solid ${darkPurple};
+background-color: ${purple};
 color: ${white};
 text-align: center;
 `
 
 export const SearchBar = styled.article`
-background-color: ${lightGray};
+background-color: ${darkPurple};
 padding: 2rem;
 input {
     display: block;
@@ -28,13 +28,14 @@ margin-top: 5px;
 `
 export const EmployeeCardBar = styled.article`
 .card-body {
-    padding: 20px 0 0 40px;
+    padding: 0px 0 0 100px;
 }
+
 .no-gutters {
-    width: 40rem;
+    width: 20rem;
 }
 #ec {
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 li {
     list-style: none;  

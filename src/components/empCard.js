@@ -10,7 +10,7 @@ import {
  } from "reactstrap";
 
 
-import { EmployeeCardBar } from "../styles"
+import { EmployeeCardBar } from "../components/styles"
 //import API from "../utils/API";
 
 // const loadEmployee = () => {
@@ -25,7 +25,7 @@ import { EmployeeCardBar } from "../styles"
 
 // }
 
-const EmployeeCard = props => {
+const EmpCard = props => {
    // console.log(props);
     
     return (
@@ -65,4 +65,4 @@ const EmployeeCard = props => {
     )
 };
 
-export default EmployeeCard;
+export default EmpCard;

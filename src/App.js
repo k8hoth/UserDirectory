@@ -3,10 +3,10 @@ import { Container } from "reactstrap"; //, Row, Col
 
 
 import NavBar from "./components/NavBar";
-import EmpSearch from "./components/EmployeeSearch";
-import EmpCard from "./components/EmployeeCard";
+import EmpSearch from "./components/empSearch";
+import EmpCard from "./components/empCard";
 import sampleData from "./data/sample.json";
-import moment from 'moment';
+
 
 function App() {
   const [employee, setEmployee] = useState({
@@ -26,7 +26,7 @@ function App() {
     if (searchResults.length) {
 
       return searchResults.map(record => (
-        <EmployeeCard
+        <EmpCard
         key={record.registered.date}
         id={record.registered.date}
         image = {record.picture.large}
@@ -34,13 +34,13 @@ function App() {
         last = {record.name.last}
         phone={record.phone}
         email = {record.email}
-        dob = {moment(record.dob.date, "YYYY-MM-DD[T]HH:mm:ss.SSS[Z]").format("MMMM Do YYYY")} 
+        
         />
       ))
     } else {
 
       return data.map(record => (
-      <EmployeeCard
+      <EmpCard
       key={record.registered.date}
       id={record.registered.date}
       image = {record.picture.large}
@@ -48,7 +48,7 @@ function App() {
       last = {record.name.last}
       phone={record.phone}
       email = {record.email}
-      dob = {moment(record.dob.date, "YYYY-MM-DD[T]HH:mm:ss.SSS[Z]").format("MMMM Do YYYY")} 
+     
       />
     ))
 
@@ -59,7 +59,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <EmployeeSearch
+      <EmpSearch
         searchTerm={searchTerm}
         handleInputChange={handleInputChange}
       />

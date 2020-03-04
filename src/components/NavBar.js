@@ -1,11 +1,11 @@
 import React from "react";
 
-import { HeaderBar } from "../styles"
+import { HeaderBar } from "../components/styles"
 
 const NavBar = props => {
     return (
         <HeaderBar>
-        <h1>Employee Directory</h1>
+        <h1>Directory</h1>
         <p>Start typing first or last name</p>
         </HeaderBar>
     )
