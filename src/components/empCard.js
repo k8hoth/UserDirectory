@@ -49,7 +49,7 @@ const EmpCard = props => {
                             <CardText>
                                 <li>Email is: {props.email}</li>
                                 <li>Phone number is {props.phone}</li>
-                                <li>Date of birthday is {props.dob}</li>
+                                
                             </CardText>
                             
                             </CardBody>
