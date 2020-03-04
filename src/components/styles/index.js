@@ -10,17 +10,17 @@ border-bottom: 3px solid ${darkPurple};
 background-color: ${darkPurple};
 padding: ${20}; 
 color: ${white};
-text-align: center;
+text-align: left;
 font-size: 20px
 `
 
 export const SearchBar = styled.article`
 background-color: ${darkPurple};
-padding: 3rem;
+padding: rem;
 input {
     display: block;
     margin : auto;
-    width: 250px
+    width: 300px
 alignment: left;
 
 }
@@ -34,7 +34,6 @@ export const EmployeeCardBar = styled.article`
 .card-body {
     padding: 0px 0 0 100px;
     background: ${lightGray}
-    margin: 20px
 }
 
 .no-gutters {
